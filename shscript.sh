@@ -8,8 +8,8 @@ apt-key add fox-crypto-gpg.asc
 apt-get update
 cd /root
 #installing normal openvpn, easy rsa & openvpn-nl
-apt-get install openvpn easy-rsa 
-apt-get install openvpn-nl
+apt-get install openvpn easy-rsa -y
+apt-get install openvpn-nl -y
 #ipforward
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
